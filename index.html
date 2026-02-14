@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZAMXS OBLIVION | v5.5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="v5-theme">
+    <div id="app">
+        <header class="header-v5">
+            <h2 class="neon-title">_ ZAMXS OBLIVION</h2>
+            <p class="tagline">ENCRYPT • DEPLOY • SNIFF</p>
+        </header>
+
+        <div class="card main-card">
+            <div class="tabs">
+                <span id="tab-encrypt" onclick="switchPage('encrypt')"><i class="icon">🔒</i> Encrypt HTML</span>
+                <span id="tab-sniff" class="active" onclick="switchPage('sniff')"><i class="icon"><b>&lt;/&gt;</b></i> Get Assets</span>
+            </div>
+
+            <div id="page-sniff">
+                <input type="text" id="target-sniff" placeholder="https://target-website.com">
+                <button class="btn-fetch" onclick="ultraSniffer()">FETCH SOURCE & ASSETS (BYPASS ON)</button>
+            </div>
+
+            <div id="page-encrypt" class="hidden">
+                <textarea id="raw-html" placeholder="Paste HTML code here..."></textarea>
+                <button class="btn-encrypt" onclick="encryptHTML()">ENCRYPT NOW</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>🔍 WHOIS & IP LOOKUP</h3>
+            <input type="text" id="lookup-url" placeholder="example.com">
+            <button class="btn-fetch" onclick="lookupData()">GET INFO</button>
+            <div id="lookup-result" class="terminal-box">Waiting for data...</div>
+        </div>
+
+        <div class="card info-card">
+            <h3>DEVELOPER INFO</h3>
+            <p>Dev: <b>ZAMXS & OBLIVION</b></p>
+            <div class="update-log">
+                <p>v5.5: Fixed UI Tabs, Dual-Proxy Bypass, ZAMXS Branding, WHOIS added.</p>
+            </div>
+        </div>
+
+        <div class="social-grid">
+            <a href="https://t.me/anjay527" target="_blank" class="s-btn tg">Telegram</a>
+            <a href="https://wa.me/6283110796306" target="_blank" class="s-btn wa">WhatsApp</a>
+            <a href="https://tiktok.com/@dapazniboz" target="_blank" class="s-btn dev">Developer</a>
+            <a href="https://tiktok.com/@dapazniboz" target="_blank" class="s-btn tt">TikTok</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
