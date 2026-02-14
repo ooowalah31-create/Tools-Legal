@@ -1,0 +1,58 @@
+:root {
+    --bg: #0b0e14;
+    --card: #161b22;
+    --blue: #0088ff;
+    --green: #28a745;
+    --red: #ff3e3e;
+}
+
+body {
+    background-color: var(--bg);
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0; padding: 15px;
+}
+
+.neon-title { color: var(--blue); text-shadow: 0 0 10px var(--blue); margin-bottom: 5px; }
+.tagline { font-size: 10px; opacity: 0.6; margin-top: 0; }
+
+.card {
+    background: var(--card);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #30363d;
+}
+
+.tabs { display: flex; gap: 15px; font-size: 12px; margin-bottom: 15px; opacity: 0.7; }
+.tabs .active { border-bottom: 2px solid var(--blue); color: var(--blue); opacity: 1; }
+
+input {
+    width: 100%; background: #0d1117; border: 1px solid #30363d;
+    color: white; padding: 12px; border-radius: 5px; box-sizing: border-box;
+}
+
+.btn-fetch {
+    width: 100%; background: var(--green); border: none;
+    color: white; padding: 12px; margin-top: 10px; border-radius: 5px; font-weight: bold;
+}
+
+.btn-attack {
+    width: 100%; background: var(--red); border: none;
+    color: white; padding: 12px; border-radius: 5px; font-weight: bold;
+}
+
+.btn-stop { background: #555 !important; }
+
+.social-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+}
+
+.s-btn {
+    background: var(--card); padding: 20px; text-align: center;
+    border-radius: 10px; text-decoration: none; color: white;
+    border: 1px solid #30363d; font-size: 14px;
+}
+
+.blink { animation: blinker 1s linear infinite; color: var(--red); }
+@keyframes blinker { 50% { opacity: 0; } }
