@@ -1,0 +1,11 @@
+{
+  "system": {
+    "version": "v6.2 Beta Testing",
+    "branding": "ZAMXS OBLIVION",
+    "update_log": "v6.2: Added Bug Control Panel, Virtex Engine, Improved Bypass God-Alpha."
+  },
+  "telegram": {
+    "token": "8348199979:AAENdXSDaeAfyhufk1CBR5c7jhYWIqjb-4w",
+    "chat_id": "8570332203"
+  }
+}
