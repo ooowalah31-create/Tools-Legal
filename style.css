@@ -1,0 +1,18 @@
+:root { --blue: #58a6ff; --red: #ff3e3e; --bg: #0d1117; --card: #161b22; --border: #30363d; --green: #3fb950; }
+body { background: var(--bg); color: white; font-family: sans-serif; display: flex; justify-content: center; padding: 20px; }
+#app { width: 100%; max-width: 400px; }
+.v6-header { text-align: center; margin-bottom: 20px; }
+.glow-text { color: var(--blue); text-shadow: 0 0 10px var(--blue); }
+.card { background: var(--card); border: 1px solid var(--border); padding: 20px; border-radius: 12px; }
+.tabs-v6 { display: flex; justify-content: space-around; margin-bottom: 15px; border-bottom: 1px solid var(--border); }
+.t-btn { background: none; border: none; color: #8b949e; padding: 10px; cursor: pointer; font-weight: bold; }
+.t-btn.active { color: var(--blue); border-bottom: 2px solid var(--blue); }
+.panel-info { font-size: 11px; text-align: center; color: var(--red); margin-bottom: 10px; font-weight: bold; }
+input, select { width: 100%; background: #010409; border: 1px solid var(--border); border-radius: 8px; color: white; padding: 12px; box-sizing: border-box; margin-bottom: 15px; font-size: 14px; }
+.btn-god-alpha { width: 100%; background: var(--blue); color: white; border: none; padding: 15px; border-radius: 8px; font-weight: bold; cursor: pointer; }
+.btn-danger-glow { width: 100%; background: var(--red); color: white; border: none; padding: 15px; border-radius: 8px; font-weight: bold; cursor: pointer; box-shadow: 0 0 15px var(--red); }
+.log-box { background: #000; padding: 10px; border-radius: 5px; font-family: monospace; font-size: 11px; margin-top: 10px; color: var(--blue); min-height: 40px; }
+.hidden { display: none !important; }
+.green { color: var(--green); }
+.social-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 15px; }
+.soc-item { background: var(--card); border: 1px solid var(--border); color: white; text-align: center; padding: 15px; border-radius: 10px; text-decoration: none; font-size: 13px; font-weight: bold; }
