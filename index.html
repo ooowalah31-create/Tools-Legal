@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZAMXS OBLIVION v6.3 ALPHA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="smoke-background"></div>
+  <audio id="bg-audio" src="Lil Tatang - Kau Dan Basuri (prod.@alxnworld ).mp3" loop></audio>
+  
+  <div id="login-screen" class="app-wrapper">
+    <h1 class="main-title">ZAMXS OBLIVION</h1>
+    <div class="container profile-card">
+        <img src="https://i.ibb.co/pv6gbd7g/a2540013132b.jpg" alt="Logo" class="profile-logo" />
+        <div class="profile-username">SECURE ACCESS</div>
+        <div class="profile-details">v6.3 ALPHA TESTING</div>
+    </div>
+    <div class="container">
+        <div class="section-title">Username</div>
+        <input type="text" id="user" placeholder="Enter username">
+        <div class="section-title">Key Password</div>
+        <input type="password" id="pass" placeholder="Enter key">
+        <button onclick="checkAuth()" class="execute-button">
+          <i class="fas fa-sign-in-alt"></i> LOGIN TO PANEL
+        </button>
+    </div>
+  </div>
+
+  <div id="main-dashboard" class="app-wrapper hidden">
+      <h1 class="main-title">DASHBOARD v6.3</h1>
+      <div class="card">
+          <div class="tabs-v6">
+              <button class="t-btn active" onclick="switchTab('sniff')">🔒 Sniff</button>
+              <button class="t-btn" onclick="switchTab('admin')">🛡️ Spy</button>
+              <button class="t-btn" onclick="switchTab('dev')">👤 Dev</button>
+          </div>
+          
+          <div id="tab-sniff" class="content-tab">
+              <div class="section-title">Asset Stealer (Bypass ON)</div>
+              <input type="text" id="target-url" placeholder="https://target-site.com/">
+              <button class="btn-god-alpha" onclick="godAlphaSniffer()">FETCH & DOWNLOAD ASSETS</button>
+              <div id="sniff-status" class="log-box">Status: Ready.</div>
+          </div>
+
+          <div id="tab-admin" class="content-tab hidden">
+              <div class="section-title">ADMIN SPY LOG</div>
+              <div id="spy-log" class="log-box">Monitoring failed attempts...</div>
+          </div>
+
+          <div id="tab-dev" class="content-tab hidden">
+              <div class="dev-info-box">
+                  <h3 style="color: #BE60EE; font-family: 'Orbitron'; font-size:16px;">DEVELOPER INFO</h3>
+                  <p style="font-size: 14px; margin-top:10px;">Dev: <b>ZAMXS OBLIVION</b></p>
+                  <p style="font-size: 11px; color: #9A9A9A;" id="dev-update">v6.3 ALPHA FIXED</p>
+                  <hr style="border: 0.5px solid #3F0A5E; margin:15px 0;">
+                  <div class="stats-grid">
+                      <div class="stat-item">Status: <span class="green">ACTIVE</span></div>
+                      <div class="stat-item">Engine: Alpha v6.3</div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+            </html>
+  
