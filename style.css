@@ -1,0 +1,22 @@
+:root { --blue: #BE60EE; --bg: #0D0014; --card: #1A0526; --border: #3F0A5E; --text: #E0E0E0; --green: #3fb950; --red: #ff3e3e; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--bg); color: var(--text); font-family: 'Montserrat', sans-serif; display: flex; justify-content: center; min-height: 100vh; padding: 20px; }
+.app-wrapper { width: 100%; max-width: 420px; z-index: 10; }
+.main-title { font-family: 'Orbitron', sans-serif; color: var(--blue); text-align: center; margin-bottom: 25px; text-shadow: 0 0 10px var(--blue); }
+.container, .card { background: var(--card); border: 1px solid var(--border); padding: 25px; border-radius: 20px; box-shadow: 0 0 20px rgba(190, 96, 238, 0.2); margin-bottom: 20px; backdrop-filter: blur(5px); }
+.profile-logo { width: 80px; height: 80px; border-radius: 50%; border: 2px solid var(--blue); display: block; margin: 0 auto 15px; }
+.section-title { font-family: 'Orbitron'; font-size: 13px; color: var(--blue); margin-bottom: 10px; }
+input { width: 100%; padding: 12px; background: #2D0842; border: 1px solid var(--blue); border-radius: 10px; color: white; margin-bottom: 15px; outline: none; transition: 0.3s; }
+input:focus { box-shadow: 0 0 10px var(--blue); }
+.execute-button, .btn-god-alpha { width: 100%; background: linear-gradient(90deg, #BE60EE, #7D26A6); color: white; padding: 15px; border: none; border-radius: 10px; font-weight: bold; cursor: pointer; font-size: 14px; box-shadow: 0 0 15px var(--blue); }
+.tabs-v6 { display: flex; justify-content: space-around; margin-bottom: 20px; border-bottom: 1px solid var(--border); }
+.t-btn { background: none; border: none; color: #8b949e; padding: 10px; cursor: pointer; font-weight: bold; font-family: 'Orbitron'; font-size: 12px; }
+.t-btn.active { color: var(--blue); border-bottom: 2px solid var(--blue); }
+.log-box { background: #000; padding: 12px; border-radius: 8px; font-family: monospace; font-size: 11px; color: var(--blue); margin-top: 10px; min-height: 50px; border: 1px solid var(--border); }
+.stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 15px; }
+.stat-item { background: #2D0842; padding: 10px; border-radius: 8px; text-align: center; font-size: 11px; }
+#smoke-background { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; }
+.smoke-particle { position: absolute; bottom: 0; width: 4px; height: 4px; background: rgba(255, 50, 50, 0.4); border-radius: 50%; filter: blur(2px); animation: rise 10s linear infinite; }
+@keyframes rise { 0% { transform: translateY(0); opacity: 0.8; } 100% { transform: translateY(-100vh); opacity: 0; } }
+.hidden { display: none !important; }
+.green { color: var(--green); } .blue { color: var(--blue); } .red { color: var(--red); }
