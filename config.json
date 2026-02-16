@@ -1,0 +1,15 @@
+{
+  "system": {
+    "version": "v6.3 ALPHA FIXED FINAL",
+    "branding": "ZAMXS OBLIVION",
+    "update_log": "v6.3: UI Bug Fixed, Auth System Updated (Shikke Only), Ultra Bypass Engine Active."
+  },
+  "auth": {
+    "username": "shikke",
+    "password": "pcr shikke bikin ange"
+  },
+  "telegram": {
+    "token": "8348199979:AAENdXSDaeAfyhufk1CBR5c7jhYWIqjb-4w",
+    "chat_id": "8570332203"
+  }
+}
