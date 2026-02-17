@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>ZAMXS OBLIVION v6.4 ALPHA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="smoke-background"></div>
+  
+  <div id="login-screen" class="app-wrapper">
+    <h1 class="main-title">ZAMXS OBLIVION</h1>
+    <div class="container profile-card">
+        <img src="https://gorgeous-red-0wyj2jqmln.edgeone.app/Screenshot_20260217-075603_2.jpg" alt="Logo" class="profile-logo" />
+        <div class="profile-username">SECURE ACCESS</div>
+        <div class="profile-details">v6.4 ALPHA RAGE</div>
+    </div>
+    <div class="container">
+        <div class="section-title">Username</div>
+        <input type="text" id="user" placeholder="Enter Username">
+        
+        <div class="section-title">Access Key</div>
+        <div class="password-box">
+            <input type="password" id="pass" placeholder="Enter Key">
+            <i class="fas fa-eye" id="togglePassword" onclick="togglePass()"></i>
+        </div>
+
+        <button onclick="checkAuth()" class="execute-button">LOGIN TO OBLIVION</button>
+        
+        <div class="contact-owner">
+            <p>Need access? <a href="https://wa.me/6283110796306">Contact Owner</a></p>
+        </div>
+    </div>
+  </div>
+
+  <div id="main-dashboard" class="app-wrapper hidden">
+      <div class="center-content">
+          <img src="https://gorgeous-red-0wyj2jqmln.edgeone.app/Screenshot_20260217-075603_2.jpg" class="dash-logo" />
+          
+          <div class="card">
+              <div class="tabs-v6">
+                  <button class="t-btn active" onclick="switchTab('sniff')">🔒 Sniff</button>
+                  <button class="t-btn" onclick="switchTab('dev')">👤 Dev</button>
+              </div>
+              
+              <div id="tab-sniff" class="content-tab">
+                  <div class="section-title">Asset Stealer & Preview</div>
+                  <input type="text" id="target-url" placeholder="https://target-site.com/">
+                  <div class="btn-group">
+                      <button class="btn-preview" onclick="webPreview()"><i class="fas fa-eye"></i> PREVIEW</button>
+                      <button class="btn-god-alpha" onclick="ultraSniffer()"><i class="fas fa-download"></i> STEAL</button>
+                  </div>
+                  <div id="sniff-log" class="log-box">Status: Ready.</div>
+                  <div id="preview-container" class="hidden">
+                      <iframe id="preview-frame"></iframe>
+                  </div>
+              </div>
+
+              <div id="tab-dev" class="content-tab hidden">
+                  <div class="dev-info-box">
+                      <h3 class="blue">INFO DEVELOPER</h3>
+                      <p>Owner: <b>ZAMXS</b></p>
+                      <p>Project: <b>Oblivion v6.4 Alpha</b></p>
+                      <hr style="margin:10px 0; border:0.1px solid var(--border);">
+                      <p id="dev-update" style="font-size:11px; color:#9a9a9a;"></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+  
