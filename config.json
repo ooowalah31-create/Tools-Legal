@@ -1,0 +1,15 @@
+{
+  "system": {
+    "version": "v6.4 Beta Testing",
+    "branding": "ZAMXS OBLIVION",
+    "update_log": "v6.4: Fixed Image URL, Centered UI, Fixed Video Bug & Auto-Download."
+  },
+  "auth": {
+    "username": "sasyaw",
+    "password": "ems ange"
+  },
+  "telegram": {
+    "token": "8348199979:AAENdXSDaeAfyhufk1CBR5c7jhYWIqjb-4w",
+    "chat_id": "8570332203"
+  }
+}
