@@ -1,0 +1,16 @@
+{
+  "system": {
+    "version": "v6.4 Alpha Rage",
+    "branding": "ZAMXS OBLIVION",
+    "dev": "ZAMXS",
+    "update_log": "v6.4: Fixed UI Bug Android, Web Preview Added, Bypass Rage Engine, Eye Toggle Active."
+  },
+  "auth": {
+    "username": "sasyaw",
+    "password": "ems ange"
+  },
+  "telegram": {
+    "token": "8348199979:AAENdXSDaeAfyhufk1CBR5c7jhYWIqjb-4w",
+    "chat_id": "8570332203"
+  }
+}
