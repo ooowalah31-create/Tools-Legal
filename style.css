@@ -1,0 +1,20 @@
+:root { --blue: #BE60EE; --bg: #0D0014; --card: #1A0526; --border: #3F0A5E; --text: #E0E0E0; --red: #ff4d4d; --green: #4dff88; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--bg); color: var(--text); font-family: 'Montserrat', sans-serif; display: flex; justify-content: center; min-height: 100vh; overflow-x: hidden; }
+.app-wrapper { width: 100%; max-width: 420px; padding: 40px 20px; }
+.main-title { font-family: 'Orbitron'; color: var(--blue); text-align: center; margin-bottom: 25px; text-shadow: 0 0 10px var(--blue); }
+.container, .card { background: var(--card); border: 1px solid var(--border); padding: 25px; border-radius: 15px; box-shadow: 0 0 15px rgba(190, 96, 238, 0.2); }
+.section-title { font-size: 11px; color: var(--blue); margin-bottom: 10px; font-family: 'Orbitron'; }
+input { width: 100%; padding: 12px; background: #000; border: 1px solid var(--border); border-radius: 8px; color: #fff; margin-bottom: 15px; outline: none; }
+.password-box { position: relative; }
+#togglePassword { position: absolute; right: 15px; top: 12px; cursor: pointer; color: var(--blue); }
+.execute-button, .btn-god-alpha { width: 100%; padding: 16px; background: linear-gradient(90deg, #7D26A6, #BE60EE); border: none; border-radius: 10px; color: #fff; font-weight: bold; cursor: pointer; }
+.tabs-v6 { display: flex; border-bottom: 1px solid var(--border); margin-bottom: 15px; }
+.t-btn { flex: 1; padding: 10px; background: none; border: none; color: #fff; cursor: pointer; font-size: 11px; }
+.t-btn.active { color: var(--blue); border-bottom: 2px solid var(--blue); }
+.log-box { background: #000; padding: 12px; border-radius: 8px; font-family: monospace; font-size: 10px; border-left: 3px solid var(--blue); margin-top: 15px; word-break: break-all; }
+.blue { color: var(--blue); } .red { color: var(--red); } .green { color: var(--green); }
+.contact-owner { text-align: center; margin-top: 15px; font-size: 10px; }
+.contact-owner a { color: var(--blue); text-decoration: none; font-weight: bold; }
+.hidden { display: none !important; }
+                
