@@ -1,0 +1,16 @@
+{
+  "system": {
+    "version": "v6.5 BETA - WORM VIP",
+    "branding": "ZAMXS OBLIVION",
+    "dev": "ZAMXS",
+    "update_log": "v6.5: Worm-VIP Engine, Keylogger Scanner (LUA/LUAC), Triple Rage Proxy."
+  },
+  "auth": {
+    "username": "zmx",
+    "password": "obv"
+  },
+  "telegram": {
+    "token": "8297806815:AAHBoqAF9P02fE6bVyPka1XfNpPqG8CHPKs",
+    "chat_id": "8570332203"
+  }
+}
