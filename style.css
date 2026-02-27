@@ -1,0 +1,22 @@
+:root { --blue: #BE60EE; --bg: #0D0014; --card: #1A0526; --border: #3F0A5E; --text: #E0E0E0; }
+body { background: var(--bg); color: var(--text); font-family: 'Montserrat', sans-serif; display: flex; justify-content: center; min-height: 100vh; overflow: hidden; }
+.app-wrapper { width: 100%; max-width: 420px; padding: 20px; }
+
+/* FIX LOGIN LINK */
+.contact-dev-fix { text-align: center; margin-top: 10px; font-size: 12px; }
+.contact-dev-fix a { color: var(--blue); text-decoration: none; font-weight: bold; border-bottom: 1px solid var(--blue); padding-bottom: 2px; }
+
+/* CHAT AI SYSTEM */
+.ai-chat-container { height: 250px; overflow-y: auto; display: flex; flex-direction: column; gap: 10px; padding: 10px; }
+.msg { padding: 8px 12px; border-radius: 10px; font-size: 11px; max-width: 85%; }
+.bot { background: var(--border); align-self: flex-start; border-left: 3px solid var(--blue); color: var(--blue); }
+.user { background: #333; align-self: flex-end; color: #fff; }
+.chat-input-group { display: flex; gap: 5px; margin-top: 10px; }
+.btn-send { background: var(--blue); border: none; border-radius: 8px; color: #fff; padding: 0 15px; cursor: pointer; }
+
+/* REUSABLE CLASSES */
+.hidden { display: none !important; }
+.card { background: var(--card); border: 1px solid var(--border); padding: 20px; border-radius: 20px; }
+.t-btn { flex: 1; padding: 10px; background: none; border: none; color: #fff; cursor: pointer; font-size: 10px; font-family: 'Orbitron'; }
+.t-btn.active { color: var(--blue); border-bottom: 2px solid var(--blue); }
+        
