@@ -1,0 +1,15 @@
+{
+  "system": {
+    "version": "v6.6 ALPHA",
+    "branding": "ZAMXS OBLIVION",
+    "dev": "ZAMXS & OBLIVION",
+    "ai_engine": "GEMINI-NEURAL PRO"
+  },
+  "auth": {
+    "username": "zmx",
+    "password": "obv"
+  },
+  "api": {
+    "gemini_key": "AIzaSyB_w54p1SsKX-dQTCOy2DzZ-KLmxDWXqC0"
+  }
+}
