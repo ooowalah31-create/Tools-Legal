@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>ZAMXS OBLIVION v6.6 ALPHA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="login-screen" class="app-wrapper">
+    <h1 class="main-title">OBLIVION v6.6</h1>
+    <div class="container">
+        <div class="section-title">NEURAL INTERFACE ACCESS</div>
+        <input type="text" id="user" placeholder="Admin Username">
+        <div class="password-box">
+            <input type="password" id="pass" placeholder="Access Key">
+            <i class="fas fa-eye" id="togglePassword" onclick="togglePass()"></i>
+        </div>
+        <button onclick="checkAuth()" class="execute-button">INITIALIZE</button>
+        <div class="contact-dev-fix">
+            Need Access? <a href="https://wa.me/6283110796306">Contact Developer</a>
+        </div>
+    </div>
+  </div>
+
+  <div id="main-dashboard" class="app-wrapper hidden">
+      <div class="card">
+          <div class="tabs-v6">
+              <button class="t-btn active" id="btn-scanner" onclick="switchTab('scanner')">SCANNER</button>
+              <button class="t-btn" id="btn-sniff" onclick="switchTab('sniff')">SNIFFER</button>
+              <button class="t-btn" id="btn-chat" onclick="switchTab('chat')">AI v3</button>
+              <button class="t-btn" id="btn-info" onclick="switchTab('info')">INFO</button>
+          </div>
+
+          <div id="tab-scanner" class="content-tab">
+              <div class="section-title">Deep Scanner Disclosure</div>
+              <input type="file" id="file-input" accept=".lua,.luac">
+              <button class="btn-god-alpha" onclick="scanFile()">START DEEP SCAN</button>
+              <div id="scan-log" class="log-box">Status: Waiting for file...</div>
+          </div>
+
+          <div id="tab-sniff" class="content-tab hidden">
+              <div class="section-title">Worm-VIP Asset Stealer</div>
+              <input type="text" id="target-url" placeholder="https://target-website.com">
+              <button class="btn-god-alpha" onclick="startSniff()">BYPASS & STEAL</button>
+              <div id="sniff-log" class="log-box">Engine: Active.</div>
+          </div>
+
+          <div id="tab-chat" class="content-tab hidden">
+              <div id="chat-box" class="chat-container log-box">
+                  <div class="msg bot">OBLIVION v6.6 Alpha Online. Neural Engine Active. Silahkan yapping, Tuan.</div>
+              </div>
+              <div class="chat-input-area">
+                  <input type="text" id="ai-input" placeholder="Type message...">
+                  <button onclick="sendChat()" class="btn-send"><i class="fas fa-paper-plane"></i></button>
+              </div>
+          </div>
+
+          <div id="tab-info" class="content-tab hidden">
+              <div class="dev-card">
+                  <h3 class="blue">ZAMXS OBLIVION</h3>
+                  <p>Lead: <b>ZAMXS</b> | Core: <b>OBLIVION</b></p>
+                  <hr style="border:0.5px solid var(--border); margin:10px 0;">
+                  <p style="font-size:10px;">v6.6 Alpha: Silent Mode, Gemini Integration, Restored v6.6 Beta UI Design.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+                </html>
+                
