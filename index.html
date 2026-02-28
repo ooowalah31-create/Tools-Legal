@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>ZAMXS OBLIVION v6.7 CLOSED BETA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+</head>
+<body>
+  <div id="login-screen" class="app-wrapper">
+    <h1 class="main-title">OBLIVION v6.7</h1>
+    <div class="container">
+        <div class="section-title">CLOSED BETA ACCESS</div>
+        <input type="text" id="user" placeholder="Admin Username">
+        <div class="password-box">
+            <input type="password" id="pass" placeholder="Access Key">
+            <i class="fas fa-eye" id="togglePassword" onclick="togglePass()"></i>
+        </div>
+        <button onclick="checkAuth()" class="execute-button">ENTER SYSTEM</button>
+        <div class="contact-dev-fix">
+            Need Access? <a href="https://wa.me/6283110796306">Contact Developer</a>
+        </div>
+    </div>
+  </div>
+
+  <div id="main-dashboard" class="app-wrapper hidden">
+      <div class="card">
+          <div class="tabs-v6">
+              <button class="t-btn active" id="btn-scanner" onclick="switchTab('scanner')">SCANNER</button>
+              <button class="t-btn" id="btn-sniff" onclick="switchTab('sniff')">SNIFFER</button>
+              <button class="t-btn" id="btn-deploy" onclick="switchTab('deploy')">DEPLOY</button>
+              <button class="t-btn" id="btn-info" onclick="switchTab('info')">INFO</button>
+          </div>
+
+          <div id="tab-scanner" class="content-tab">
+              <input type="file" id="file-input" accept=".lua,.luac">
+              <button class="btn-god-alpha" onclick="scanFile()">DEEP SCAN</button>
+              <div id="scan-log" class="log-box">Status: Ready.</div>
+          </div>
+
+          <div id="tab-sniff" class="content-tab hidden">
+              <input type="text" id="target-url" placeholder="https://target-site.com">
+              <button class="btn-god-alpha" onclick="startSniff()">STEAL ASSETS</button>
+              <div id="sniff-log" class="log-box">Engine: WORM-VIP.</div>
+          </div>
+
+          <div id="tab-deploy" class="content-tab hidden">
+              <div class="section-title">AUTO DEPLOY TO VERCEL</div>
+              <div class="note-box">
+                  <p id="note-text" class="red" style="font-size: 9px; margin-bottom: 10px;">
+                      * Pilih file .html atau .zip untuk melihat panduan deploy.
+                  </p>
+              </div>
+              <input type="file" id="deploy-input" accept=".html,.zip" onchange="updateNote()">
+              <button class="btn-god-alpha" onclick="processDeploy()">START DEPLOYMENT</button>
+              <div id="deploy-log" class="log-box">Awaiting file upload...</div>
+          </div>
+
+          <div id="tab-info" class="content-tab hidden">
+              <div class="dev-card">
+                  <h3 class="blue">PROJECT: OBLIVION</h3>
+                  <p>Lead: <b>ZAMXS</b></p>
+                  <p>Status: <b class="green">v6.7 CLOSED BETA</b></p>
+                  <hr style="border:0.5px solid var(--border); margin:10px 0;">
+                  <ul style="font-size: 10px; list-style: none;">
+                      <li>- Removed AI Menu (Complexity Issues)</li>
+                      <li>- Added Auto Deploy (Vercel + GitHub)</li>
+                      <li>- Silent Mode Active</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+            </html>
+  
