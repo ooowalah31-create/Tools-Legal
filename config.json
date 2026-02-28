@@ -1,0 +1,16 @@
+{
+  "system": {
+    "version": "v6.7 CLOSED BETA",
+    "branding": "ZAMXS OBLIVION",
+    "status": "LEGACY CONTINUED"
+  },
+  "auth": {
+    "username": "zmx",
+    "password": "obv"
+  },
+  "deploy": {
+    "vercel_token": "vcp_11Z5xXK4XrGfAWaWlFYiYKdagLWX6bhCAHhxJYDMf8nWhuO4Gn4ZX8GY",
+    "github_token": "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"
+  }
+}
+
